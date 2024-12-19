@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Orders</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f9f9f9;
+        color: #333;
+      }
+
+      #ordersContainer {
+        width: 100%;
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        background: #fff;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+      }
+      .container h1 {
+        text-align: center;
+      }
+      .order {
+        border: 1px solid #ddd;
+        margin-bottom: 20px;
+        padding: 15px;
+        border-radius: 5px;
+        background-color: #fafafa;
+      }
+
+      .order h3 {
+        margin: 0 0 15px;
+        font-size: 18px;
+        color: #444;
+      }
+
+      .order-item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 0;
+        border-bottom: 1px solid #eaeaea;
+      }
+
+      .order-item:last-child {
+        border-bottom: none;
+      }
+
+      .order-item p {
+        margin: 0;
+        font-size: 16px;
+        color: #555;
+      }
+
+      .order-item input[type="number"] {
+        width: 50px;
+        padding: 5px;
+        margin-right: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 14px;
+      }
+
+      .order-item button {
+        padding: 6px 12px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        font-size: 14px;
+        cursor: pointer;
+      }
+
+      .order-item button:hover {
+        background-color: #0056b3;
+      }
+
+      #ordersContainer p {
+        text-align: center;
+        font-size: 16px;
+        color: #666;
+      }
+      #quote {
+        font-size: 30px;
+        color: indianred;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <p id="quote">
+        We Value Your Feedback: Share Your Thoughts on Your Recent Orders!
+      </p>
+      <div id="ordersContainer"></div>
+    </div>
+    <script src="./myorder.js"></script>
+    <script src="./order.js"></script>
+  </body>
+</html>

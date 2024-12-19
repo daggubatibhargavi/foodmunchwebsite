@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/ionicons@7.1.0/dist/ionicons.min.css"
+    />
+
+    <link rel="stylesheet" href="./viewall.css" />
+  </head>
+  <body>
+    <nav>
+      <h2>BUY FOOD ITEMS</h2>
+      <!-- <p>Making Every Bite Memorable......😋</p> -->
+
+      <a href="./index.html">Home</a>
+      <a href="./order.html"
+        ><ion-icon name="basket"></ion-icon>cart<span id="cart-count"
+          >0</span
+        ></a
+      >
+      <!-- <p>Making Every Bite Memorable......😋</p> -->
+    </nav>
+    <p id="quote">Making Every Bite Memorable......😋</p>
+    <!-- <a href="./view.html"></a> -->
+    <div id="viewContainer"></div>
+    <div id="menuContainer"></div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        function displayItems() {
+          let cartData = localStorage.getItem("cart");
+          console.log(cartData);
+
+          let viewData = JSON.parse(cartData);
+          console.log(viewData);
+
+          let totalQuantity = Object.values(viewData).reduce(
+            (total, item) => total + item.quantity,
+            0
+          );
+
+          console.log(totalQuantity);
+
+          const cartCount = document.getElementById("cart-count");
+          cartCount.textContent = `${totalQuantity}`;
+          console.log(cartCount.textContent);
+
+          // cartCount.addEventListener("click", () => {
+          //   window.location.href = "./order.html";
+          // });
+
+          let viewContainer = document.getElementById("viewContainer");
+          viewContainer.innerHTML = "";
+          for (item in viewData) {
+            console.log(item);
+          }
+          console.log("Items rendered:", Object.keys(viewData).length);
+        }
+        displayItems();
+      });
+    </script>
+    <script src="./view.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,93 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #007bff;
+  color: white;
+  padding: 30px 20px;
+}
+
+nav h2 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+nav ion-icon {
+  font-size: 1.2rem;
+  margin-right: 5px;
+}
+
+nav span {
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 2px 6px;
+  font-size: 0.9rem;
+  margin-left: 5px;
+}
+
+
+#viewContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+}
+
+
+#viewContainer div {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  text-align: center;
+}
+
+#viewContainer img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+#viewContainer h3 {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+#viewContainer p {
+  font-size: 1rem;
+  color: #007bff;
+  font-weight: bold;
+}
+#quote {
+  font-size: 30px;
+  color: lightsalmon;
+  text-align: center;
+}

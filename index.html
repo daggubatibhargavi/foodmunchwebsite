@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-body-tertiary">
+      <div class="container">
+        <a class="navbar-brand" href="#"
+          ><img
+            src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/food-munch-img.png"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link" href="#wcusection" id="navItem1"
+              >why choose us?</a
+            >
+            <a class="nav-link" href="#exploremenusection" id="navItem2"
+              >Explore Menu</a
+            >
+            <a class="nav-link" href="#deliverysection" id="navItem3"
+              >Delivery& Payment</a
+            >
+            <a class="nav-link" href="#followus" id="navItem4">Follow Us</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div
+      class="banner-section-bg-container d-flex justify-content-center flex-column"
+    >
+      <div class="text-center">
+        <h1 class="banner-heading mb-3 my-3 pt-5">
+          Get Delicious Food Anytime
+        </h1>
+        <p class="banner-caption mb-4 my-4">Eat Smart & Healthy</p>
+        <button class="custom-button" id="viewMenuBtn">View Menu</button>
+
+        <button class="custom-outline-button" id="orderNow">Order Now</button>
+      </div>
+    </div>
+    <div class="wcu-section pt-5 pb-5" id="wcusection">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h1 class="wcu-section-heading">why choose us?</h1>
+            <p class="wcu-section-description">
+              We use both original recipes and classic versions of famous food
+              items.
+            </p>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="wcu-card p-3 mb-3">
+              <img
+                src="	https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/food-serve.png"
+              />
+              <h1 class="wcu-card-title">Food Service</h1>
+              <p class="wcu-card-description">
+                Experience fine dining at the comfort of your home. All our
+                orders are carefully packed and arranged to give you the nothing
+                less than perfect.
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="wcu-card p-3 mb-3">
+              <img
+                src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/fruits-img.png"
+              />
+              <h1 class="wcu-card-title">Fresh Food</h1>
+              <p class="wcu-card-description">
+                The Fresh Food group provides fresh-cut fruits and vegetables
+                directly picked from our partner farms and farm houses so that
+                you always get them tree to plate.
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="wcu-card p-3 mb-3">
+              <img
+                src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/offers-img.png"
+              />
+              <h1 class="wcu-card-title">Best Offers</h1>
+              <p class="wcu-card-description">
+                Food Coupons & Offers upto <mark>50% OFF</mark> and Exclusive
+                Promo Codes on All Online Food Orders.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="explore-menu-section" id="exploremenusection">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h1 class="menu-section-heading">Explore menu section</h1>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="shadow p-3 mb-3 menu-item-card">
+              <img
+                src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/em-ginger-fried-img.png"
+                class="menu-item-image w-100"
+              />
+              <h2>Non-Veg Starters</h2>
+              <a
+                href="#menuContainer"
+                class="menu-item-link"
+                onclick=" viewAll(event, 'Non-Veg');"
+                >View All</a
+              >
+              <!-- <div class="review">
+                <label>Rate this item:</label>
+                <input type="number" class="rating-input" min="1" max="5" />
+                <button class="submit-rating">Submit</button>
+              </div> -->
+              <!-- <button class="add-to-cart-btn" onclick="addToCart('Non-Veg Starters', 150)">Add to Cart - $150</button> -->
+              <!-- <button onclick="bhargavi('Non-Veg')">View All</button> -->
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="shadow p-3 mb-3 menu-item-card">
+              <img
+                src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/em-veg-starters-img.png"
+                class="menu-item-image w-100"
+              />
+              <h2>Veg Starters</h2>
+              <a
+                href="#menuContainer"
+                class="menu-item-link"
+                onclick=" viewAll(event, 'Veg')"
+                >View All</a
+              >
+              <!-- <div class="review">
+                <label>Rate this item:</label>
+                <input type="number" class="rating-input" min="1" max="5" />
+                <button class="submit-rating">Submit</button>
+              </div> -->
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="shadow p-3 mb-3 menu-item-card">
+              <img
+                src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/em-grilled-seafood-img.png"
+                class="menu-item-image w-100"
+              />
+              <h2>Fish & Sea Food</h2>
+              <a
+                href="#menuContainer"
+                class="menu-item-link"
+                onclick=" viewAll(event, 'sea-food')"
+                >View All</a
+              >
+              <!-- <div class="review">
+                <label>Rate this item:</label>
+                <input type="number" class="rating-input" min="1" max="5" />
+                <button class="submit-rating">Submit</button>
+              </div> -->
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="shadow p-3 mb-3 menu-item-card">
+              <img
+                src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/em-hyderabadi-biryani-img.png"
+                class="menu-item-image w-100"
+              />
+              <h2>Main-course</h2>
+              <a
+                href="#menuContainer"
+                class="menu-item-link"
+                onclick="viewAll(event, 'main-course')"
+                >View All</a
+              >
+              <!-- <div class="review">
+                <label>Rate this item:</label>
+                <input type="number" class="rating-input" min="1" max="5" />
+                <button class="submit-rating">Submit</button>
+              </div> -->
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="shadow p-3 mb-3 menu-item-card">
+              <img
+                src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/em-mushroom-noodles-img.png"
+                class="menu-item-image w-100"
+              />
+              <h2>Noodles</h2>
+              <a
+                href="#menuContainer"
+                class="menu-item-link"
+                onclick="viewAll(event, 'noodles')"
+                >View All</a
+              >
+              <!-- <div class="review">
+                <label>Rate this item:</label>
+                <input type="number" class="rating-input" min="1" max="5" />
+                <button class="submit-rating">Submit</button>
+              </div> -->
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="shadow p-3 mb-3 menu-item-card">
+              <img
+                src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/em-gluten-img.png"
+                class="menu-item-image w-100"
+              />
+              <h2>Salads</h2>
+              <a
+                href="#menuContainer"
+                class="menu-item-link"
+                onclick="viewAll(event, 'salads')"
+                >View All</a
+              >
+              <!-- <div class="review">
+                <label>Rate this item:</label>
+                <input type="number" class="rating-input" min="1" max="5" />
+                <button class="submit-rating">Submit</button>
+              </div> -->
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="shadow p-3 mb-3 menu-item-card">
+              <img
+                src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/em-coffee-bourbon-img.png"
+                class="menu-item-image w-100"
+              />
+              <h2>Desserts</h2>
+              <a
+                href="#menuContainer"
+                class="menu-item-link"
+                onclick="viewAll(event, 'desserts')"
+                >View All</a
+              >
+              <!-- <div class="review">
+                <label>Rate this item:</label>
+                <input type="number" class="rating-input" min="1" max="5" />
+                <button class="submit-rating">Submit</button>
+              </div> -->
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="shadow p-3 mb-3 menu-item-card">
+              <img
+                src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/em-soup-img.png"
+                class="menu-item-image w-100"
+              />
+              <h2>Soups</h2>
+              <a
+                href="#menuContainer"
+                class="menu-item-link"
+                onclick="viewAll(event, 'soups')"
+                >View All</a
+              >
+              <!-- window.location.href="./view.html" -->
+              <!-- <div class="review">
+                <label>Rate this item:</label>
+                <input type="number" class="rating-input" min="1" max="5" />
+                <button class="submit-rating">Submit</button>
+              </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="healthy-food-section pt-5 pb-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-5">
+            <div class="text-center">
+              <img
+                src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/healthy-food-plate-img.png"
+              />
+            </div>
+          </div>
+          <div class="col-12 col-md-5">
+            <h1 class="healthy-food-section-heading col-md-7">
+              Fresh, Healthy, Organic, Delicious Fruits
+            </h1>
+            <p class="healthy-food-section-description">
+              Say no to harmful chemicals and go fully organic with our range of
+              fresh fruits and veggies. Pamper your body and your senses with
+              the true and unadulterated gifts from mother nature. with the true
+              and unadulterated gifts from mother nature.
+            </p>
+            <button onclick="openPopup('5rBZ9S0b2Tc')" class="custom-button">
+              Watch Video
+            </button>
+            <div id="popupContainer" class="hidden">
+              <button
+                class="custom-button"
+                id="closebtn"
+                onclick="closePopup()"
+              >
+                Close
+              </button>
+              <iframe
+                id="videoFrame"
+                width="560"
+                height="315"
+                frameborder="0"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div id="overlay" class="overlay hidden"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="delivery-and-payment-section pt-5" id="deliverysection">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-5 order-1 order-md-2">
+            <div class="text-center">
+              <img
+                src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/delivery-payment-section-img.png"
+              />
+            </div>
+          </div>
+          <div class="col-12 col-md-7 order-2 order-md-1">
+            <h1 class="delivery-payment-section-heading">
+              Delivery and Payment
+            </h1>
+            <p class="delivery-payment-section-description">
+              Enjoy hassle-free payment with the plenitude of payment options
+              available for you. Get live tracking and locate your food on a
+              live map. It's quite a sight to see your food arrive to your door.
+              Plus, you get a 5% discount on every order every time you pay
+              online.
+            </p>
+            <a href="./order.html"
+              ><button class="custom-button">Order Now</button></a
+            >
+            <!-- <button id="orderNow">Order Now</button> -->
+
+            <!-- <p id="orderStatus"></p> -->
+
+            <div>
+              <img
+                src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/paypal-card-img.png"
+                class="payment-card-img"
+              />
+              <img
+                src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/master-card-img.png"
+                class="payment-card-img"
+              />
+              <img
+                src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/visa-card-img.png"
+                class="payment-card-img"
+              />
+              <img
+                src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/american-express-img.png"
+                class="payment-card-img"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="thanking-customers-section pt-5 pb-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-5">
+            <h2 class="thanking-customers-section-heading">
+              Thank you for being a valuable customer to us.
+            </h2>
+            <p class="thanking-customers-section-description">
+              We have a surprise gift for you
+            </p>
+            <button
+              class="custom-button"
+              onclick="isGiftOn ? giftoff() : gifton()"
+            >
+              Redeem Gift
+            </button>
+            <p id="redeemButton"></p>
+          </div>
+          <div class="col-12 col-md-5">
+            <img
+              src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/thanking-customers-section-img.png"
+              class="thanking-customers-section-img"
+              id="gift-image"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="follow-us-section pt-5 pb-5" id="followus">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h1 class="follow-us-section-heading">Follow Us</h1>
+          </div>
+          <div class="col-12 d-flex justify-content-center">
+            <div
+              class="follow-us-container d-flex justify-content-space-between"
+            >
+              <div class="follow-us-icon-container">
+                <i class="fa-brands fa-twitter icon"></i>
+              </div>
+              <div class="follow-us-icon-container">
+                <i class="fa-brands fa-instagram icon"></i>
+              </div>
+              <div class="follow-us-icon-container">
+                <i class="fa-brands fa-facebook icon"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-section pt-5 pb-5">
+      <div class="row">
+        <div class="container">
+          <div class="col-12 text-center">
+            <img
+              src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/food-munch-img.png"
+              class="food-munch-logo"
+            />
+            <h1 class="footer-section-mail-id">orderfood@foodmuch.com</h1>
+            <p class="footer-section-address">
+              123 Ayur Vigyan Nagar, New Delhi, India.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <a href="./viewall.html" class="footer-link">View Cart</a> -->
+    <!-- <div id="menuContainer"></div> -->
+    <script src="view.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
